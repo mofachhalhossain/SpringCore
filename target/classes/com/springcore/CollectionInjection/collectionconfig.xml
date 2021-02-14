@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+
+
+<bean class="com.springcore.CollectionInjection.Emp" name="Emp1">
+<property name="name" value="Adjo"/>
+
+<property name="phones">
+
+<list>
+<value>3242552</value>
+<value>425342</value>
+<value>52354</value>
+</list>
+</property>
+
+<property name="addresses">
+<set>
+<value>afga</value>
+<value>hasdf</value>
+<value>yregfds</value>
+</set>
+</property>
+
+<property name="courses">
+<map>
+<entry key="Java" value="Beginner"/>
+<entry key="JavaScript" value="Begineer"/>
+</map>
+</property>
+
+<property name="props">
+<props>
+<prop key="Behaviour">good </prop>
+<prop key ="Work">good </prop>
+</props>
+</property>
+
+
+
+
+</bean>
+
+
+
+
+
+
+        
+</beans>

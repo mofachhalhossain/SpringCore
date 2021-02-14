@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+<!--  this is bean -->
+        
+<bean class="com.springcore.PremativeInjection.Student" name="student1">
+
+<property name="stdId" value="2343"/>                                       <!-- Value as Attribute -->
+
+
+<property name="stdName">                                                      <!-- Value as Tag -->
+<value>Mosh</value>
+</property>
+
+<property name="stdAddress">
+<value>Dhaka</value>
+</property>
+
+
+</bean>
+
+
+<bean class="com.springcore.PremativeInjection.Student" name="student2" p:stdId="2345" p:stdName="John" p:stdAddress="Chita" />    <!-- Value as P-schema -->
+
+
+
+
+
+
+
+
+        
+</beans>
